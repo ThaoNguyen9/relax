@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="btlon/css/css.css" rel="stylesheet">
+<link rel="btlon/shortcut icon" href="btlon/image/icon_film.jpg"/>
+<script src="btlon/js/jquery-3.5.1.min.js"></script>
+<script src="btlon/js/trangchu.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+	body{background: url(btlon/image/1000742566_1000045473_1582096427.jpg)};
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<title>Games</title>
+</head>
+	
+<body >
+	<header>
+		<h1>TIME TO RELAX</h1>
+	</header>
+	<nav>
+		<ul class="MENU">
+			<li><a href="trangchu.html">Trang Chủ</a></li>
+				<li class="subMENU">
+					<a href="GAMES.html">Games</a>
+					<ul class="SUB">
+						<li><a href="game.html">Flappy Bird</a></li>
+						<li><a href="https://gamevui.vn/pikachu/game">Pikachu</a></li>
+						<li><a href="https://www.king.com/game/candycrush">Candy Crush</a></li>
+						<li><a href="https://gamevui.vn/dao-vang-co-dien/game">Đào Vàng</a></li>
+						<li><a href="https://gamevui.vn/ca-lon-ca-be/game">Cá Lớn Cá Bé</a></li>
+					</ul>
+				</li>
+		    	<li class="subMENU" >
+                    <a href="TV.html">TV Phim</a>
+                    <ul class="SUB">
+						<li><a href="index.html">Link web phim</a></li>
+					</ul>
+                </li>
+			    <li><a href="MP3/index.html">Music</a></li>
+		</ul>
+	</nav>
+	<figcaption>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</figcaption>
+	<figcaption>-------<3-----------------<3--------</figcaption>
+	<figcaption>---<3-------------<3------------<3----</figcaption>
+	<figcaption>---<3--------------------------<3----</figcaption>
+	<figcaption>-------<3-----------------<3---------</figcaption>
+	<figcaption>------------<3-------<3--------------</figcaption>
+	<figcaption>-----------------<3------------------</figcaption>
+   <h2>Review hoi à! 0.0 link lên trên để tới web lựa thõa thích nhen</h2>
+   <figcaption>----</figcaption>
+	<figcaption>-------<3-----------------<3--------</figcaption>
+	<figcaption>---<3-------------<3------------<3----</figcaption>
+	<figcaption>---<3--------------------------<3----</figcaption>
+	<figcaption>-------<3-----------------<3---------</figcaption>
+	<figcaption>------------<3-------<3--------------</figcaption>
+	<figcaption>-----------------<3------------------</figcaption>
+	<figcaption>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</figcaption>
+	<div class="w3-container">
+	  </div>
+	  <div class="w3-content w3-display-container" style="max-width:800px">
+		<img class="mySlides" src="btlon/image/1.png" style="width:100%">
+		<img class="mySlides" src="btlon/image/2.png" style="width:100%">
+        <img class="mySlides" src="btlon/image/3.png" style="width:100%">
+		<img class="mySlides" src="btlon/image/4.png" style="width:100%">
+		<img class="mySlides" src="btlon/image/5.png" style="width:100%">
+		  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+		  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+		  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+		  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+		  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+		  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+		</div>
+	  </div>
+	  <script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+		
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+		
+		function currentDiv(n) {
+		  showDivs(slideIndex = n);
+		}
+		
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" w3-white", "");
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " w3-white";
+		}
+		</script>
+		
+</body>
+</html>
